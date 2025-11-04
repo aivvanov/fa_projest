@@ -1,4 +1,4 @@
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, HttpUrl
 from datetime import datetime, timedelta
 from typing import Literal
 
@@ -10,7 +10,7 @@ class Transaction(BaseModel):
 
 
 class CategoryImage(BaseModel):
-    url: str
+    url: HttpUrl
     name: str
 
 
